@@ -1,15 +1,19 @@
-.logo {
-    &__label {
-        display: inline-block;
-        font-size: 30px;
-        margin: 20px 0 0 10px;
-    }
-}
-
 %list {
     margin: 0;
     padding: 0;
     list-style: none;
+}
+
+.logo {
+    &__label {
+        display: inline-block;
+        font-size: 30px;
+        color: #888;
+    }
+
+    &__text {
+        margin-top: 0;
+    }
 }
 
 .nav-main {
@@ -17,16 +21,20 @@
         @extend %list;
         
         display: flex;
-        margin: 20px 10px;
+        height: 100%;
     }
 
     &__item {
-        padding: 10px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 20px;
     }
 
     &__link {
         color: white;
         text-decoration: none;
+        text-transform: uppercase;
     }
 
     &_bg_dark {
@@ -34,6 +42,6 @@
     }
 
     &_border {
-        border-radius: 5px;
+        border-radius: 15px;
     }
 }

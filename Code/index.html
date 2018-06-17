@@ -6,14 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="">
     <link rel='stylesheet' href='dist/styles.css'>
+    <link rel="stylesheet" href="fonts.css">
 </head>
 <body>
     <header class="header-main header-main_color-white">
         <div class="logo">
             <span class="logo__label">Fashipnable</span>
 
-            <p>Free PSD Website Template</p>
+            <p class="logo__text">Free PSD Website Template</p>
         </div>
 
         <nav class="nav-main">
@@ -27,89 +29,115 @@
         </nav>
     </header>
 
-    <main class="main-main main-main_bg-gray">
-        <section class="slider">
+    <main class="main-main main-main_bg_gray">
+        <section class="slider slider_bg_dark">
             <div class="slider__route">
-                <input type="radio">
-                <input type="radio">
-                <input type="radio">
-                <input type="radio">
-                <input type="radio">                
+                <input type="radio" name="slide" class="slider__route__radio">
+                <input type="radio" name="slide" class="slider__route__radio">
+                <input type="radio" name="slide" class="slider__route__radio">
+                <input type="radio" name="slide" class="slider__route__radio">
+                <input type="radio" name="slide" class="slider__route__radio">                
             </div>
 
-            <div>
+            <div class="slider__text slider__text_bg_dark-gost">
                 <h2 class="font-large">Silde 1 Caption</h2>
 
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, earum quidem. Nam ut animi, voluptas magnam esse ea sed laboriosam. Obcaecati est doloremque reprehenderit voluptates quas quod modi quis architecto.</p>
             </div>
         </section>
 
-        <section>
-            <ul>
-                <li>
-                    <h2 class="font-big"></h2>
+        <section class="photos-list new-section">
+            <ul class="photos-list__list">
+                <li class="photos-list__item">
+                    <h2 class="font-large">Indonectetus facilis</h2>
 
-                    <div></div>
+                    <div class="photos-list__photo photos-list__photo_bg_dark"></div>
 
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ullam eius voluptatum blanditiis voluptatem doloribus fuga, libero autem vitae quibusdam ad delectus recusandae deleniti voluptates quo. Velit corrupti fugiat commodi!</p>
 
-                    <a href="#">Continue Reading</a>
+                    <a href="#" class="link_color_orange">Continue Reading ></a>
                 </li>
-                <li>
-                    <h2 class="font-big"></h2>
+                <li class="photos-list__item">
+                    <h2 class="font-large">Indonectetus facilis</h2>
 
-                    <div></div>
+                    <div class="photos-list__photo photos-list__photo_bg_dark"></div>
 
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ullam eius voluptatum blanditiis voluptatem doloribus fuga, libero autem vitae quibusdam ad delectus recusandae deleniti voluptates quo. Velit corrupti fugiat commodi!</p>
 
-                    <a href="#">Continue Reading</a>
+                    <a href="#" class="link_color_orange">Continue Reading ></a>
                 </li>
-                <li>
-                    <h2 class="font-big"></h2>
+                <li class="photos-list__item">
+                    <h2 class="font-large">Indonectetus facilis</h2>
 
-                    <div></div>
+                    <div class="photos-list__photo photos-list__photo_bg_dark"></div>
 
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ullam eius voluptatum blanditiis voluptatem doloribus fuga, libero autem vitae quibusdam ad delectus recusandae deleniti voluptates quo. Velit corrupti fugiat commodi!</p>
 
-                    <a href="#">Continue Reading</a>
+                    <a href="#" class="link_color_orange">Continue Reading ></a>
                 </li>
             </ul>
         </section>
 
-        <section class="gallery">
-            <ul class="gallery__list">
-                <li class="gallery__item gallery__item_size_big"></li>
-                <li class="gallery__item gallery__item_size_small"></li>
-                <li class="gallery__item gallery__item_size_small"></li>  
-                <li class="gallery__item gallery__item_size_small"></li>  
-                <li class="gallery__item gallery__item_size_small"></li>  
-                <li class="gallery__item gallery__item_size_small"></li>  
-                <li class="gallery__item gallery__item_size_small"></li>                 
-            </ul>
+        <section class="gallery new-section">
+            <h2 class="font-large">Latest From The Gallery</h2>
+
+            <div class="gallery__content">
+                <div class="gallery__item gallery__item_bg_dark gallery__item_size_big"></div>
+
+                <ul class="gallery__list">
+                    <li class="gallery__item gallery__item_bg_dark gallery__item_size_small"></li>
+                    <li class="gallery__item gallery__item_bg_dark gallery__item_size_small"></li>  
+                    <li class="gallery__item gallery__item_bg_dark gallery__item_size_small"></li>  
+                    <li class="gallery__item gallery__item_bg_dark gallery__item_size_small"></li>  
+                    <li class="gallery__item gallery__item_bg_dark gallery__item_size_small"></li>  
+                    <li class="gallery__item gallery__item_bg_dark gallery__item_size_small"></li>                 
+                </ul>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <ul>
-            <li>
+    <footer class="main-footer main-footer_color-white main-footer_border">
+        <ul class="footer-content">
+            <li class="footer-content__item">
                 <div>
-                    <h3>Newsletter</h3>
+                    <h3 class="font-big">Newsletter</h3>
 
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error illum, nemo, cupiditate quod repellendus dolorum unde voluptatum amet inventore saepe modi optio quos sequi velit vitae incidunt. Mollitia, quisquam ad.</p>
                     
-                    <form>
-                        <input type="text">
+                    <form class="email-form">
+                        <input class="email-form__email" type="text" >
         
-                        <input type="submit">
+                        <input class="email-form__submit" type="submit" value="SIGN UP">
                     </form>
                 </div>
-                <div>
-                    <h3>Stay Social</h3>
+                <div class="new-section">
+                    <h3 class="font-big">Stay Social</h3>
 
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <img src="" alt="">
+                    <ul class="social">
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <img class="social__icon" src="C:\Users\levpa\Documents\projects\epam\flex\Code\img\facebook-logo-button.svg" alt="">
+
+                                <p>LinkedIn</p>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <img class="social__icon" src="C:\Users\levpa\Documents\projects\epam\flex\Code\img\facebook-logo-button.svg" alt="">
+
+                                <p>LinkedIn</p>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <img class="social__icon" src="C:\Users\levpa\Documents\projects\epam\flex\Code\img\facebook-logo-button.svg" alt="">
+
+                                <p>LinkedIn</p>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <img class="social__icon" src="C:\Users\levpa\Documents\projects\epam\flex\Code\img\facebook-logo-button.svg" alt="">
 
                                 <p>LinkedIn</p>
                             </a>
@@ -117,29 +145,40 @@
                     </ul>
                 </div>
             </li>
-            <li>
-                <h3>From The Blog</h3>
+            <li class="footer-content__item from-blog">
+                <h3 class="font-big">From The Blog</h3>
 
-                <ul>
-                    <li>
-                        <h4>Blog Post Title</h4>
+                <ul class="from-blog__list">
+                    <li class="from-blog__item">
+                        <h4 class="from-blog__item__title">Blog Post Title</h4>
 
                         <b>Post by Admin on 00.00.0000</b>
 
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia eos ullam ipsa reiciendis, porro non unde vero voluptates libero provident commodi at repudiandae quidem excepturi harum amet cupiditate inventore sit?</p>
 
-                        <a href="#"> Read More >></a>
+                        <a href="#" class="link_color_orange link_pos_right"> Read More >></a>
+                    </li>
+                    <li class="from-blog__item">
+                        <h4 class="from-blog__item__title">Blog Post Title</h4>
+
+                        <b>Post by Admin on 00.00.0000</b>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia eos ullam ipsa reiciendis, porro non unde vero voluptates libero provident commodi at repudiandae quidem excepturi harum amet cupiditate inventore sit?</p>
+
+                        <a href="#" class="link_color_orange link_pos_right"> Read More >></a>
                     </li>
                 </ul>
             </li>
-            <li>
-                <h3>Latest From Twitter</h3>
+            <li class="footer-content__item last-twitter">
+                <h3 class="font-big">Latest From Twitter</h3>
 
-                <ul>
-                    <li></li>
+                <ul class="last-twitter__list">
+                    <li class="last-twitter__item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quidem quisquam debitis doloribus, eius vero eum officia atque eveniet tenetur blanditiis aperiam, libero error velit optio suscipit! Numquam, in labore.</li>
+                    <li class="last-twitter__item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quidem quisquam debitis doloribus, eius vero eum officia atque eveniet tenetur blanditiis aperiam, libero error velit optio suscipit! Numquam, in labore.</li>
+                    <li class="last-twitter__item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quidem quisquam debitis doloribus, eius vero eum officia atque eveniet tenetur blanditiis aperiam, libero error velit optio suscipit! Numquam, in labore.</li>                
                 </ul>
 
-                <a href="#">Sign up to our Twitter feed here >></a>
+                <a href="#" class="link_color_orange link_pos_right">Sign up to our Twitter feed here >></a>
             </li>
         </ul>
     </footer>

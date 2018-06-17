@@ -1,4 +1,9 @@
 @import "header";
+@import "slider";
+@import "gallery";
+@import "photos-list";
+@import "footer";
+
 
 $bg-main: #d2d2d2;
 
@@ -6,20 +11,52 @@ $bg-main: #d2d2d2;
 
 }
 
-.font-big {
+.font-large {
+    color: #666;
+}
 
+.font-big {
+    color: #666;
+    font-style: italic;
+}
+
+.new-section {
+    margin-top: 30px;
+}
+
+.link {
+    &_color_orange {
+        color: #ff5d30;
+        text-decoration: none;
+    }
+
+    &_pos_right {
+        width: 100%;
+        display: inline-block;
+        text-align: right;
+    }
 }
 
 html,
 body {
     padding: 0;
     margin: 0;
+    font-family: GeorgiaRegular;
+    font-weight: 400;
+    color: #666;
+}
+
+body {
     background: #573838;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .header-main {
     display: flex;
     justify-content: space-between;
+    padding: 30px 20px;
 
     &_color-white {
         background: white;
@@ -27,7 +64,22 @@ body {
 }
 
 .main-main {
-    &_bg-gray {
+    padding: 40px 20px;
+
+    &_bg_gray {
         background: $bg-main;
+    }
+}
+
+.main-footer {
+    padding: 40px 20px;
+    color: rgb(121, 121, 121);
+
+    &_color-white {
+        background: #ededed;
+    }
+
+    &_border {
+        border-top: 2px solid rgb(172, 172, 172);
     }
 }
