@@ -2,31 +2,26 @@
     width: 960px;
     height: 400px;
     position: relative;
-
     &__route {
         position: absolute;
         right: 5px;
         top: 5px;
-
         &__radio {
             margin: 0;
             padding: 0;
         }
     }
-
     &__text {
         position: absolute;
         padding: 20px;
         width: 400px;
         bottom: 20px;
         left: 20px;
-        
         &_bg_dark-gost {
             background: rgba(0, 0, 0, 0.5);
             color: white;
         }
     }
-
     &_bg_dark {
         background: #333333;
     }

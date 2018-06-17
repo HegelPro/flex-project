@@ -5,34 +5,27 @@
 }
 
 .gallery {
-
     &__content {
         display: flex;
         justify-content: space-between;
     }
-
     &__list {
         @extend %list;
-
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         align-content: space-between;
-        
         width: 380px;
     }
-
     &__item {
         &_size_big {
             width: 568px;
             height: 250px;
         }
-
         &_size_small {
             width: 120px;
             height: 120px;
         }
-
         &_bg_dark {
             background: #333;
         }

@@ -7,20 +7,16 @@
 .photos-list {
     &__list {
         @extend %list;
-
         display: flex;
         justify-content: space-between;
     }
-
     &__item {
         width: 300px;
     }
-
     &__photo {
         height: 280px;
-
         &_bg_dark {
-            background: #333;            
+            background: #333;
         }
     }
 }

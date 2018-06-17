@@ -10,7 +10,6 @@
         font-size: 30px;
         color: #888;
     }
-
     &__text {
         margin-top: 0;
     }
@@ -19,28 +18,23 @@
 .nav-main {
     &__list {
         @extend %list;
-        
         display: flex;
         height: 100%;
     }
-
     &__item {
         display: flex;
         justify-content: center;
         flex-direction: column;
         padding: 0 20px;
     }
-
     &__link {
         color: white;
         text-decoration: none;
         text-transform: uppercase;
     }
-
     &_bg_dark {
         background: rgb(43, 43, 43);
     }
-
     &_border {
         border-radius: 15px;
     }

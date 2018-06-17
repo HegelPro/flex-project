@@ -6,10 +6,8 @@
 
 .footer-content {
     @extend %list;
-
     display: flex;
     justify-content: space-between;
-
     &__item {
         width: 300px;
     }
@@ -25,7 +23,6 @@
         color: rgb(121, 121, 121);
         width: 188px;
     }
-
     &__submit {
         width: 88px;
         background: linear-gradient(white, #84848497);
@@ -40,21 +37,17 @@
 
 .social {
     @extend %list;
-
     display: flex;
     flex-wrap: wrap;
-
     &__item {
         width: 50%;
     }
-
     &__link {
         display: flex;
         color: #999;
         font-size: 13px;
         text-decoration: none;
     }
-
     &__icon {
         width: 32px;
         margin-right: 10px;
@@ -65,7 +58,6 @@
     &__list {
         @extend %list;
     }
-
     &__item {
         &__title {
             color: #999;
@@ -78,7 +70,6 @@
     &__list {
         @extend %list;
     }
-
     &__item {
         margin-top: 20px;
     }
