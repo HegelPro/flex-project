@@ -1,3 +1,3 @@
-// import "../scss/main.scss"
+const galleryRouter = require("./GalleryRouter");
 
-// import "bootstrap/dist/css/bootstrap.min.css"
+galleryRouter.initBtn(document.querySelector(".gallery__list"));

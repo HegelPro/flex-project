@@ -1,4 +1,4 @@
-.nav-main__list, .gallery__list, .photos-list__list, .footer-content, .social, .from-blog__list, .last-twitter__list {
+.nav-main__list, .extra-menu, .gallery__list, .photos-list__list, .footer-content, .social, .from-blog__list, .last-twitter__list {
   margin: 0;
   padding: 0;
   list-style: none; }
@@ -13,24 +13,78 @@
 
 .nav-main__list {
   display: flex;
-  height: 100%; }
+  height: 70px;
+  z-index: 100; }
 
 .nav-main__item {
+  position: relative;
   display: flex;
   justify-content: center;
-  flex-direction: column;
-  padding: 0 20px; }
+  flex-direction: column; }
 
 .nav-main__link {
+  display: block;
   color: white;
   text-decoration: none;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  line-height: 70px;
+  padding: 0 20px; }
+  .nav-main__link:hover {
+    transition: all .5s;
+    background: #6b6a6a; }
 
 .nav-main_bg_dark {
   background: #2b2b2b; }
 
 .nav-main_border {
-  border-radius: 15px; }
+  border-radius: 10px; }
+
+.extra-menu__item {
+  position: absolute;
+  box-sizing: border-box;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background: #afa8a8; }
+  .extra-menu__item:nth-child(1) {
+    z-index: -8; }
+  .extra-menu__item:nth-child(2) {
+    z-index: -9; }
+  .extra-menu__item:nth-child(3) {
+    z-index: -10; }
+
+.extra-menu__link {
+  box-sizing: content-box;
+  display: block;
+  text-decoration: none;
+  color: azure;
+  padding: 5px 10px; }
+  .extra-menu__link:nth-child(1) {
+    padding: 10px 10px 5px 10px;
+    z-index: -8; }
+  .extra-menu__link:hover {
+    transition: all 0.5s;
+    background: #7b7777; }
+
+.nav-main__item:hover .extra-menu__item {
+  transition: all 1s;
+  color: #a33232; }
+  .nav-main__item:hover .extra-menu__item:nth-child(1) {
+    top: 60px;
+    z-index: 10; }
+  .nav-main__item:hover .extra-menu__item:nth-child(2) {
+    top: 100px;
+    z-index: 9; }
+  .nav-main__item:hover .extra-menu__item:nth-child(3) {
+    top: 140px;
+    z-index: 8; }
+
+@keyframes shine {
+  0%, 100% {
+    box-shadow: 0 0 5px 5px #b6f42779; }
+  50% {
+    box-shadow: 0 0 2px 2px #b7f42746; } }
 
 .slider {
   width: 960px;
@@ -45,22 +99,32 @@
       padding: 0; }
   .slider__text {
     position: absolute;
+    bottom: 20px;
+    left: 20px;
     padding: 20px;
     width: 400px;
-    bottom: 20px;
-    left: 20px; }
+    animation-name: shine;
+    animation-duration: 2s;
+    animation-iteration-count: infinite; }
     .slider__text_bg_dark-gost {
       background: rgba(0, 0, 0, 0.5);
       color: white; }
   .slider_bg_dark {
     background: #333333; }
 
-.nav-main__list, .gallery__list, .photos-list__list, .footer-content, .social, .from-blog__list, .last-twitter__list {
+@keyframes shine {
+  0%, 100% {
+    box-shadow: 0 0 5px 5px #b6f42779; }
+  50% {
+    box-shadow: 0 0 2px 2px #b7f42746; } }
+
+.nav-main__list, .extra-menu, .gallery__list, .photos-list__list, .footer-content, .social, .from-blog__list, .last-twitter__list {
   margin: 0;
   padding: 0;
   list-style: none; }
 
 .gallery__content {
+  position: relative;
   display: flex;
   justify-content: space-between; }
 
@@ -71,18 +135,38 @@
   align-content: space-between;
   width: 380px; }
 
-.gallery__item_size_big {
-  width: 568px;
-  height: 250px; }
+.gallery__image {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  border: none; }
+  .gallery__image__size-big {
+    width: 568px;
+    height: 250px; }
+  .gallery__image__size-small {
+    width: 120px;
+    height: 120px; }
+  .gallery__image__copy {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .0;
+    width: 568px;
+    height: 250px; }
 
-.gallery__item_size_small {
-  width: 120px;
-  height: 120px; }
+@keyframes visual {
+  0% {
+    opacity: .0; }
+  100% {
+    opacity: 1; } }
 
-.gallery__item_bg_dark {
-  background: #333; }
+@keyframes hide {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: .0; } }
 
-.nav-main__list, .gallery__list, .photos-list__list, .footer-content, .social, .from-blog__list, .last-twitter__list {
+.nav-main__list, .extra-menu, .gallery__list, .photos-list__list, .footer-content, .social, .from-blog__list, .last-twitter__list {
   margin: 0;
   padding: 0;
   list-style: none; }
@@ -99,7 +183,7 @@
   .photos-list__photo_bg_dark {
     background: #333; }
 
-.nav-main__list, .gallery__list, .photos-list__list, .footer-content, .social, .from-blog__list, .last-twitter__list {
+.nav-main__list, .extra-menu, .gallery__list, .photos-list__list, .footer-content, .social, .from-blog__list, .last-twitter__list {
   margin: 0;
   padding: 0;
   list-style: none; }

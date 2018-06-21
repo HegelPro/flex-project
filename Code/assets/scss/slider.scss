@@ -1,11 +1,22 @@
+@keyframes shine {
+    0%, 100% {
+        box-shadow: 0 0 5px 5px #b6f42779;
+    }
+    50% {
+        box-shadow: 0 0 2px 2px #b7f42746;
+    }
+}
+
 .slider {
     width: 960px;
     height: 400px;
     position: relative;
+
     &__route {
         position: absolute;
         right: 5px;
         top: 5px;
+
         &__radio {
             margin: 0;
             padding: 0;
@@ -13,10 +24,16 @@
     }
     &__text {
         position: absolute;
-        padding: 20px;
-        width: 400px;
         bottom: 20px;
         left: 20px;
+
+        padding: 20px;
+        width: 400px;
+        
+        animation-name: shine;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+
         &_bg_dark-gost {
             background: rgba(0, 0, 0, 0.5);
             color: white;

@@ -3,13 +3,8 @@
 @import "gallery";
 @import "photos-list";
 @import "footer";
-
-
 $bg-main: #d2d2d2;
-
-.font-normal {
-
-}
+.font-normal {}
 
 .font-large {
     color: #666;
@@ -29,7 +24,6 @@ $bg-main: #d2d2d2;
         color: #ff5d30;
         text-decoration: none;
     }
-
     &_pos_right {
         width: 100%;
         display: inline-block;
@@ -57,7 +51,6 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 30px 20px;
-
     &_color-white {
         background: white;
     }
@@ -65,7 +58,6 @@ body {
 
 .main-main {
     padding: 40px 20px;
-
     &_bg_gray {
         background: $bg-main;
     }
@@ -74,11 +66,9 @@ body {
 .main-footer {
     padding: 40px 20px;
     color: rgb(121, 121, 121);
-
     &_color-white {
         background: #ededed;
     }
-
     &_border {
         border-top: 2px solid rgb(172, 172, 172);
     }
